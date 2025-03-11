@@ -1,0 +1,9 @@
+app = "syncShot"
+
+[[services]]
+  internal_port = 5000
+  protocol = "tcp"
+  public = true
+
+[processes]
+  app = "python app.py"
