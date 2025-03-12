@@ -19,7 +19,7 @@ def upload():
     last_uploaded_image = image_url
     last_uploader = uploader
     
-    return jsonify({"message": "Image uploaded", "image_url": last_uploaded_image, "uploader": last_uploader})
+    return jsonify({"message": "Upload successful"}), 200  # Non restituisce più l'URL dell'immagine
 
 @app.route("/latest", methods=["GET"])
 def latest():
